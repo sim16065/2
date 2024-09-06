@@ -1,0 +1,77 @@
+.navigator {
+    height : 70px;
+    border-bottom: 1px solid black; /* 하단에 검은색 테두리 추가 */
+    display: flex;
+    align-items: center; /* 네비게이션 바 내 아이템들을 수직으로 중앙 정렬 */
+}
+
+.logo img {
+    width: 300px; 
+    height: auto; /* 비율을 유지하면서 높이 자동 조절 */
+}
+
+.nav-items {
+    display: flex; /* 요소들 정렬 */
+    margin-left: auto; /* 왼쪽 여백 */
+    margin-right: 10px; /* 오른쪽 여백 */
+}
+
+.nav-items a{
+    padding: 10px 15px; /* 링크의 안쪽 여백 */
+    margin: 0 10px; /* 링크의 양쪽 여백 */
+    font-size: 18px; /* 글자 크기 */
+    text-decoration: none; /* 밑줄 제거 */
+    color: black; /* 글자 색상 */
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;/* 요소 간의 간격 설정 */
+}
+
+.image {
+    width: 150px;  /* 이미지의 너비 설정 */
+    height: auto; /* 이미지의 비율 유지 */
+    border-radius: 8px; /* 이미지의 모서리를 둥글게 설정 */
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: #2aad3c;
+    font-weight: 400;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #3d3c3c;
+    padding-bottom: 5px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em; /* 제목 상단 여백 설정 */
+    margin-block-end: 0.83em; /* 제목 하단 여백 설정 */
+    margin-inline-start: 0px; /* 제목 왼쪽 여백 제거 */
+    margin-inline-end: 0px; /* 제목 오른쪽 여백 제거 */
+    font-weight: bold;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover; /* 이미지가 비율에 맞게 잘리도록 설정 */
+}
+
+/* Contact 아이콘 정렬 */
+.contact-icons {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icons img {
+    display: inline-block;
+    width: 30px; /* 아이콘의 너비 */
+    height: auto; /* 비율 유지 */
+    margin: 0 10px; /* 아이콘 사이의 여백 */
+}
