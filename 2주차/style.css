@@ -1,0 +1,65 @@
+.head-box {
+    width: 500px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-outer-box {
+    width: 450px;
+    height: 110px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    box-shadow: -2px -2px 5px rgb(65, 64, 64), 2px 2px 5px rgb(255, 255, 255);
+}
+
+.first-inner-box{
+    width: 80px;  /* 작은 네모의 크기 */
+    height: 80px;
+    background-image: url('imoji1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.seg-image {
+    width: 110px;
+    height: 80px;
+    object-fit: contain;
+    margin: 20px
+}
+
+.body-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center;
+    background-color: #ccc;
+}
+
+.b-outer-box {
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(9, 50px); /* 9개의 열 */
+    grid-template-rows: repeat(9, 50px);    
+    box-shadow: -2px -2px 5px rgb(65, 64, 64), 2px 2px 5px rgb(255, 255, 255);
+    gap: 0; /* 셀 간의 간격을 0으로 설정 */
+  
+    
+}
+
+.td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(146, 143, 143);
+    background-color: #ccc;
+    box-sizing: border-box;
+  
+}
