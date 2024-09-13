@@ -21,7 +21,7 @@
 .first-inner-box{
     width: 80px;  /* 작은 네모의 크기 */
     height: 80px;
-    background-image: url('imoji1.png');
+    background-image: url('images/imoji1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
