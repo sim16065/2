@@ -1,0 +1,28 @@
+table {
+    width: 250px; /* 테이블의 너비를 더 넓게 설정 */
+    table-layout: fixed; 
+    background-color: #D3D3D3;
+    border-radius: 5px; /* 둥근 모서리 */
+}
+
+td {
+    padding: 10px; /* 셀의 패딩을 늘려 셀 크기 조정 */
+    text-align: center;
+    font-size: 16px; /* 텍스트 크기 조정 */
+    border: 1px solid #6b6a6a;
+    border-radius: 5px; /* 둥근 모서리 */
+}
+
+input {
+    width: 100%; /* 입력 필드가 셀의 너비를 가득 채우도록 설정 */
+    height: 50px; /* 입력 필드 높이 조정 */
+    font-size: 19px; /* 텍스트 크기 조정 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 설정 */
+    text-align: right;
+    background-color: #abbda7;
+    border-radius: 5px; /* 둥근 모서리 */
+}
+
+input:focus {
+    outline: none;
+}

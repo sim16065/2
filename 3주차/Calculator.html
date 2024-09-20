@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>계산기</title>
+</head>
+<body>
+    
+    <div class="head">
+        <table border="1">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display" oninput="counting()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" onclick="reset()">C</td>
+                <td onclick="del()">←</td>
+            </tr>      
+            <tr>
+                <td onclick="add(7)">7</td>
+                <td onclick="add(8)">8</td>
+                <td onclick="add(9)">9</td>
+                <td onclick="add('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="add(4)">4</td>
+                <td onclick="add(5)">5</td>
+                <td onclick="add(6)">6</td>
+                <td onclick="add('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="add(1)">1</td>
+                <td onclick="add(2)">2</td>
+                <td onclick="add(3)">3</td>
+                <td onclick="add('-')">-</td>
+            </tr>
+            <tr>
+
+                <td onclick="add(0)">0</td>
+                <td onclick="add('.')">.</td>
+                <td onclick="calculate()">=</td>
+                <td onclick="add('+')">+</td>
+            </tr>     
+        </table>
+    </div>
+    <script src="calc-func.js"></script>
+
+</body>
+</html>

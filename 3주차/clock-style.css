@@ -1,0 +1,72 @@
+body {
+    width: 100%; /* body 전체의 너비 */
+    max-width: 300px; /* body 요소의 최대 너비 (원하는 값으로 설정 가능) */
+    margin: 0 auto; /* 가로 가운데 정렬 */
+    padding: 200px;
+}
+
+.battery {
+    position: fixed; /* 화면에 고정 */
+    top: 150px;       /* 상단에서 10px 떨어진 위치 */
+    right: 500px;     /* 오른쪽에서 10px 떨어진 위치 */  
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    padding: 5px 10px;
+}
+
+#battery-level {
+    font-weight: bold;
+}
+
+.time {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+}
+
+#date-display{
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+#time-display{
+    font-size: 50px;
+    text-align: center;
+}
+
+.settime {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.settime span {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: lightblue;
+    padding: 5px 10px;
+}
+
+.alarmlist {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 10px;
+}
+
+.alarmlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alarmlist li {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    background-color: lightblue;
+}

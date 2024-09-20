@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock-style.css">
+    <title>시계</title>
+</head>
+<body>
+    <div class="battery">
+        <span>배터리 :</span>
+        <span id="battery-level">100%</span>
+    </div>
+
+    <div class="time">  
+        <span id="date-display"></span>
+        <span id="time-display"></span>
+        
+    </div>
+
+    <div class="settime">
+        <div>알람</div>
+        <span id="hour" onclick="increaseHour()">시</span>
+        <span id="minute" onclick="increaseMinute()">분</span>
+        <span id="second" onclick="increaseSecond()">초</span>
+        <span id="addalarm" onclick="addalarm()">추가</span>
+    </div>
+
+    <div class="alarmlist">
+        <ul id="alarm-list"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
