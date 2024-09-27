@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signup_style.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">회원가입</h1>
+    </header>
+
+    <div class="inputInfo">
+        <!-- 아이디 입력 -->
+        <div class="input-id">
+            <input type="text" id="userid" placeholder="아이디" autocomplete="username"/>
+            <button>중복 확인</button>
+            <div id="check_msg" class="check-message" style="display:none;"></div>
+        </div>
+
+        <!-- 비밀번호 입력 -->
+        <div class="input-pw">
+            <input type="password" id="password" placeholder="비밀번호" /> 
+            <i class="fa fa-eye fa-lg"></i>
+        </div>
+        <div id="password_msg" class="password-message" style="display:none;"></div>
+    </div>
+
+    <div class="userInfo">
+        <!-- 이름 입력 -->
+        <div class="input-name" >
+            <input type="text" id="username" placeholder="이름" />
+        </div>
+
+        <!-- 생년월일 입력 -->
+        <div class="input-dob">
+            <input type="text" id="bod" placeholder="생년월일 8자리" />
+        </div>
+    </div>  
+
+    
+    <div class="selection" id="selection">
+        <!-- 성별 입력 -->
+        <ul class="gender_selection" id="gender-selection">
+            <li class="radio_item">
+                <input type="radio" id="identityGender1" name="identityGender" value="M" class="blind">
+                <label for="identityGender1">남자</label>
+            </li>
+            <li class="radio_item">
+                <input type="radio" id="identityGender2" name="identityGender" value="F" class="blind">
+                <label for="identityGender2">여자</label>
+            </li>
+        </ul>
+        <!-- 내/외국인 입력 -->
+        <ul class="nationality_selection" id="foreign-selection">
+            <li class="radio_item">
+                <input type="radio" id="foreigner1" name="foreigner" value="K" class="blind">
+                <label for="foreigner1">내국인</label>
+            </li>
+            <li class="radio_item">
+                <input type="radio" id="foreigner2" name="foreigner" value="F" class="blind">
+                <label for="foreigner2">외국인</label>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- 가입하기 버튼 -->
+    <div class="submitInfo">
+        <button type="submit">가입하기</button>
+    </div>
+
+</body>
+<script src="signup_script.js"></script>
+</html>

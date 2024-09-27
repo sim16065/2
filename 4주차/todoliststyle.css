@@ -1,0 +1,63 @@
+/* 전체적인 레이아웃 설정 */
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f4f4;
+}
+
+header {
+    height: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    font-size: 24px; /* px로 설정 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+/* 메인 컨텐츠 영역 */
+.createlist {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 500px; /* 적절한 너비 설정 */
+}
+
+/* 할일 추가 영역 */
+#todobutton {
+    font-size: 17px;
+    color: #2779e1;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#todoInputFields input {
+    font-size: 17px; /* 입력 필드의 글씨 크기 설정 */
+}
+
+li {
+    padding: 10px;
+    font-size: 17px; /* Flexbox 사용 */
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #F8F9FA;
+}
+
+.deletebtn {
+    margin-left: 100px; /* 버튼과 제목 사이의 여백 */
+    background-color: red; /* 버튼 배경색 */
+    color: white; /* 버튼 텍스트 색상 */
+    border: none; /* 테두리 제거 */
+    border-radius: 4px; /* 모서리 둥글게 */
+    cursor: pointer; /* 마우스 포인터 변경 */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todoliststyle.css">
+    <title>ToDoList</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">To DO List</div>
+    </header>
+    
+    <main>
+        <div class="createlist">
+            <h2>목록</h2>
+
+            <!-- 할 일 추가 버튼 -->
+            <button id="todobutton">할 일 추가</button>
+            
+            <!-- 할 일 추가 버튼을 누르면 나오는 입력 필드들 -->
+            <div id="todoInputFields" style="display:none;">
+                <input type="text" id="todoTitle" placeholder="제목 입력">
+                <input type="text" id="todoDetails" placeholder="세부 정보 입력">
+                <input type="datetime-local" id="todoDatetime">
+                <button id="saveTodo">저장</button>
+            </div>
+
+            <ul id="todoList"></ul>
+        </div>
+    </main>
+
+    <script src="todo.js"></script>
+</body>
+</html>
